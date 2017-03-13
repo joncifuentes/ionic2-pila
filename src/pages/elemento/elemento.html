@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Página {{ numeroPag }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button full
+          [navPush]="elementoPage"
+          [navParams]="{numero: numeroPag + 1}">
+    Agregar página
+  </button> 
+  <button ion-button full color="danger" navPop>
+    Remover página
+  </button>
+  <hr>
+  <button ion-button full
+          [navPush]="testPage">
+    ir a test
+  </button> 
+</ion-content>
